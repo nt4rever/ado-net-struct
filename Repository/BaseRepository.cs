@@ -15,7 +15,7 @@ namespace Repository
 
         public BaseRepository()
         {
-            _connection = new SqlConnection("Server=.; Database=ShopEF; Integrated Security=True; TrustServerCertificate=True;");
+            _connection = new SqlConnection("Server=.; Database=DB_ADO_NET; Integrated Security=True; TrustServerCertificate=True;");
         }
 
         public virtual TEntity PopulateRecord(SqlDataReader reader)

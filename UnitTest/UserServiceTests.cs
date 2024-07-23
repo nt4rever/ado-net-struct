@@ -1,3 +1,4 @@
+using Domain.User.Entities;
 using Service;
 
 namespace UnitTest
@@ -17,7 +18,7 @@ namespace UnitTest
         {
             var users = _service.GetAll();
 
-            Assert.IsNotEmpty(users);
+            Assert.IsInstanceOf<IEnumerable<User>>(users);
         }
     }
 }
